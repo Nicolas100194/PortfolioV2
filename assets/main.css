@@ -1,27 +1,183 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*------------------------------------------
  *  Responsive
  * -----------------------------------------*/
+section {
+  min-height: 100vh;
+}
+
 h1 {
+  font-size: 90px;
+}
+
+h1, p {
   color: #ffffff;
 }
 
-h1, h2 {
+h1, h2, h3 {
+  margin: 0;
   text-transform: uppercase;
 }
 
+h3 {
+  color: #FF5C5C;
+}
+
+.container-sections {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  background-color: #0B202B;
+  scroll-snap-align: start;
+}
+
 .header-section {
-  background: #061923;
-  background: linear-gradient(0deg, rgba(6, 25, 35, 0.91) 0%, #061923 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0B202B;
+  padding: 0px 50px 0px 50px;
+  position: relative;
+}
+.header-section p {
+  border-left: solid 3px #FF5C5C;
+  padding-left: 20px;
+  max-width: 650px;
+  line-height: 27px;
+}
+.header-section .arrow {
+  background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/down-arrow.svg");
+  background-position: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+}
+
+.parcours-section {
+  background-color: #0B202B;
+  position: relative;
+}
+.parcours-section .container-txt, .parcours-section .container-timeline {
+  position: relative;
+}
+.parcours-section .container-txt {
+  position: absolute;
+  max-width: 40vw;
+  top: 15vh;
+  margin-left: 50px;
+}
+.parcours-section .container-txt h2 {
+  color: #ffffff;
+  font-size: 90px;
+}
+.parcours-section .container-txt p {
+  border-left: solid 3px #FF5C5C;
+  padding-left: 20px;
+  line-height: 27px;
+}
+.parcours-section .container-timeline {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 50vw;
+  padding-bottom: 20vh;
+  padding-right: 10vw;
+}
+.parcours-section .container-timeline:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #FF3535;
+}
+.parcours-section .container-timeline .timeline-bloc {
+  display: flex;
+  margin-bottom: 30px;
+}
+.parcours-section .container-timeline .timeline-bloc .timeline-img {
+  position: absolute;
+  display: block;
+  background: #FF3535;
+  height: 25px;
+  width: 25px;
+  transform: translateX(-11px);
+  margin-right: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 55px #FF3535;
+}
+.parcours-section .container-timeline .timeline-bloc .timeline-text {
+  margin-left: 55px;
+  max-width: 500px;
+}
+
+body {
+  overflow-y: hidden;
 }
 
 .container-header {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 0px 50px;
+  background-color: #0B202B;
+}
+.container-header ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.container-header ul li {
+  margin-right: 30px;
+}
+.container-header ul li a {
+  color: #ffffff;
+}
+.container-header ul li a:hover:after {
+  content: "";
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 30%;
+  height: 2px;
+  box-shadow: 0px 3px 25px #FF5C5C;
+  background-color: #FF5C5C;
+  transform: translateY(-8px);
+}
+.container-header a {
+  line-height: 50px;
+  color: white;
+}
+.container-header .contact-me {
+  background-color: #FF5C5C;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */

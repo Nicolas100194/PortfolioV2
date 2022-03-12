@@ -1,0 +1,95 @@
+section
+  min-height: 100vh
+
+h1
+  font-size: 90px
+
+h1, p
+  color: $cWhite
+
+h1,h2, h3
+  margin: 0
+  text-transform: uppercase
+
+h3
+  color: $cSecond
+
+.container-sections
+  height: 100vh
+  overflow-y: scroll
+  scroll-snap-type: y mandatory
+
+section
+  height: 100vh
+  background-color: $cThird
+  scroll-snap-align: start
+
+.header-section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: $cThird
+  padding: 0px 50px 0px 50px
+  position: relative
+  p
+    border-left: solid 3px $cSecond
+    padding-left: 20px
+    max-width: 650px
+    line-height: 27px
+  .arrow
+    background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/down-arrow.svg")
+    background-position: center
+    display: block
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 150px
+    width: 150px
+
+.parcours-section
+  background-color: $cThird
+  position: relative
+  .container-txt, .container-timeline
+    position: relative
+  .container-txt
+    position: absolute
+    max-width: 40vw
+    top: 15vh
+    margin-left: 50px
+    h2
+      color: $cWhite
+      font-size: 90px
+    p
+      border-left: solid 3px $cSecond
+      padding-left: 20px
+      line-height: 27px
+  .container-timeline
+    position: absolute
+    right: 0
+    bottom: 0
+    max-width: 50vw
+    padding-bottom: 20vh
+    padding-right: 10vw
+    &:before
+      content: ''
+      position: absolute
+      height: 100%
+      width: 3px
+      background: $cPrinc
+    .timeline-bloc
+      display: flex
+      margin-bottom: 30px
+      .timeline-img
+        position: absolute
+        display: block
+        background: $cPrinc
+        height: 25px
+        width: 25px
+        transform: translateX(-11px)
+        margin-right: 20px
+        border-radius: 50%
+        box-shadow: 0px 3px 55px $cPrinc
+      .timeline-text
+        margin-left: 55px
+        max-width: 500px
