@@ -12,12 +12,11 @@
 <header class="container-header">
     <nav class="container-menu">
         <ul>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 1</a></li>
+            <li><a href="#parcours-section">parcours</a></li>
+            <li><a href="#skills-section">compétences techniques</a></li>
+            <li><a href="#section-realisations">réalisations</a></li>
+            <li><a href="#section-contact">contact</a></li>
         </ul>
     </nav>
-    <a href="#" class="contact-me">Contactez moi</a>
+    <a href="#section-contact" class="contact-me">Contactez moi</a>
 </header>
