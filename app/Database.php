@@ -19,13 +19,15 @@ class DataBase{
     }
 
     private function getPDO(){
-        try {
-            $pdo = new PDO('mysql:host=localhost;dbname=portfolio;charset=utf8', 'root', '');
-            $this->pdo = $pdo;
-        } catch (Exception $e){
-            die('Erreur : ' . $e->getMessage());
+        if ($this->pdo === null) {
+            try {
+                $pdo = new PDO('mysql:host=localhost;dbname=portfolio;charset=utf8', 'root', '');
+                $this->pdo = $pdo;
+            } catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
         }
-        return $pdo;
+        return $this->pdo;
     }
 
     public function query($sqlQuery){
