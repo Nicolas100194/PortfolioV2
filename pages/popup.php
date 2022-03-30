@@ -8,7 +8,19 @@
         </div>
         <div class="info-project">
             <h3>Détails projet</h3>
-            <div class="container-technologies">
+            <div class="container-info-project">
+                <div class="bloc-info-project">
+                    <div class="cursor"></div>
+                    <div class="content-info-project">
+                        <img src="assets/img/html.png"/>
+                        <h4>Description</h4>
+                        <p>écimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est
+                            aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                            Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset conte
+                            nant des passages du Lorem Ipsum, et,
+                            lus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                    </div>
+                </div>
                 <div class="container-techno">
                     <div class="cursor"></div>
                     <div class="content-techno">
@@ -39,8 +51,8 @@
                         </ul>
                     </div>
                 </div>
-                <a href="https://media-impact.fr/" class="btn-visit-project">visiter le site web</a>
             </div>
+            <a href="https://media-impact.fr/" class="btn-visit-project">visiter le site web</a>
         </div>
     </div>
 </aside>
@@ -55,7 +67,19 @@
         </div>
         <div class="info-project">
             <h3>Détails projet</h3>
-            <div class="container-technologies">
+            <div class="container-info-project">
+                <div class="bloc-info-project">
+                    <div class="cursor"></div>
+                    <div class="content-info-project">
+                        <img src="assets/img/html.png"/>
+                        <h4>Description</h4>
+                        <p>écimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est
+                            aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                            Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset conte
+                            nant des passages du Lorem Ipsum, et,
+                            lus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                    </div>
+                </div>
                 <div class="container-techno">
                     <div class="cursor"></div>
                     <div class="content-techno">
@@ -86,8 +110,8 @@
                         </ul>
                     </div>
                 </div>
-                <a href="https://aqua-plaisir.fr/" class="btn-visit-project">visiter le site web</a>
             </div>
+            <a href="https://aqua-plaisir.fr/" class="btn-visit-project">visiter le site web</a>
         </div>
     </div>
 </aside>
@@ -102,7 +126,19 @@
         </div>
         <div class="info-project">
             <h3>Détails projet</h3>
-            <div class="container-technologies">
+            <div class="container-info-project">
+                <div class="bloc-info-project">
+                    <div class="cursor"></div>
+                    <div class="content-info-project">
+                        <img src="assets/img/html.png"/>
+                        <h4>Description</h4>
+                        <p>écimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est
+                            aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                            Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset conte
+                            nant des passages du Lorem Ipsum, et,
+                            lus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                    </div>
+                </div>
                 <div class="container-techno">
                     <div class="cursor"></div>
                     <div class="content-techno">
@@ -132,8 +168,8 @@
                         </ul>
                     </div>
                 </div>
-                <a href="http://nicolasdelacroix.fr/site_wp" class="btn-visit-project">visiter le site web</a>
             </div>
+            <a href="http://nicolasdelacroix.fr/site_wp" class="btn-visit-project">visiter le site web</a>
         </div>
     </div>
 </aside>
@@ -148,6 +184,18 @@
         </div>
         <div class="info-project">
             <h3>Détails projet</h3>
+            <div class="container-info-project">
+                <div class="cursor"></div>
+                <div class="content-info-project">
+                    <img src="assets/img/html.png"/>
+                    <h4>Description</h4>
+                    <p>écimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est
+                        aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                        Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset conte
+                        nant des passages du Lorem Ipsum, et,
+                        lus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                </div>
+            </div>
             <div class="container-technologies">
                 <div class="container-techno">
                     <div class="cursor"></div>
@@ -173,8 +221,8 @@
                         </ul>
                     </div>
                 </div>
-                <a href="http://nicolasdelacroix.fr/system_solaire/" class="btn-visit-project">visiter le site web</a>
             </div>
+            <a href="http://nicolasdelacroix.fr/system_solaire/" class="btn-visit-project">visiter le site web</a>
         </div>
     </div>
 </aside>
@@ -189,6 +237,18 @@
         </div>
         <div class="info-project">
             <h3>Détails projet</h3>
+            <div class="bloc-info-project">
+                <div class="cursor"></div>
+                <div class="content-info-project">
+                    <img src="assets/img/html.png"/>
+                    <h4>Description</h4>
+                    <p>écimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est
+                        aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                        Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset conte
+                        nant des passages du Lorem Ipsum, et,
+                        lus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                </div>
+            </div>
             <div class="container-technologies">
                 <div class="container-techno">
                     <div class="cursor"></div>
@@ -215,8 +275,8 @@
                         </ul>
                     </div>
                 </div>
-                <a href="http://nicolasdelacroix.fr/nfa016/" class="btn-visit-project">visiter le site web</a>
             </div>
+            <a href="http://nicolasdelacroix.fr/nfa016/" class="btn-visit-project">visiter le site web</a>
         </div>
     </div>
 </aside>
@@ -231,6 +291,18 @@
         </div>
         <div class="info-project">
             <h3>Détails projet</h3>
+            <div class="bloc-info-project">
+                <div class="cursor"></div>
+                <div class="content-info-project">
+                    <img src="assets/img/html.png"/>
+                    <h4>Description</h4>
+                    <p>écimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est
+                        aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+                        Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset conte
+                        nant des passages du Lorem Ipsum, et,
+                        lus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                </div>
+            </div>
             <div class="container-technologies">
                 <div class="container-techno">
                     <div class="cursor"></div>
@@ -259,8 +331,8 @@
                         </ul>
                     </div>
                 </div>
-                <a href="http://nicolasdelacroix.fr/" class="btn-visit-project">visiter le site web</a>
             </div>
+            <a href="http://nicolasdelacroix.fr/" class="btn-visit-project">visiter le site web</a>
         </div>
     </div>
 </aside>

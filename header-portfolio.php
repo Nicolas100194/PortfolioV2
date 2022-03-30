@@ -9,14 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-<header class="container-header">
-    <nav class="container-menu">
-        <ul>
-            <li><a href="#parcours-section">parcours</a></li>
-            <li><a href="#skills-section">compétences techniques</a></li>
-            <li><a href="#section-realisations">réalisations</a></li>
-            <li><a href="#section-contact">contact</a></li>
-        </ul>
-    </nav>
-    <a href="#section-contact" class="contact-me">Contactez moi</a>
-</header>
+    <div class="site-container">
+        <div class="push">
+            <header class="container-header">
+                <a href="#" class="header-icon" id="header-icon"></a>
+                <nav class="container-menu">
+                    <ul>
+                        <li><a href="#parcours-section">parcours</a></li>
+                        <li><a href="#skills-section">compétences techniques</a></li>
+                        <li><a href="#section-realisations">réalisations</a></li>
+                        <li><a href="#section-contact">contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#section-contact" class="contact-me">Contactez moi</a>
+            </header>

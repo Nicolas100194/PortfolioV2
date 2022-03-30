@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "three": "^0.138.3"
+    "three": "^0.138.3",
+    "typewriter-effect": "^2.18.2"
   }
 }

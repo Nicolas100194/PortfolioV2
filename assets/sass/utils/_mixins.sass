@@ -57,11 +57,18 @@
   @media (max-width: 767px)
     @content
 
+@mixin max700
+  @media (max-width: 700px)
+    @content
+
+@mixin max640
+  @media (max-width: 640px)
+    @content
+
 @mixin max600
   @media (max-width: 600px)
     @content
 
-// UTILISER LE MOINS POSSIBLE
 @mixin max550
   @media (max-width: 550px)
     @content
@@ -70,8 +77,12 @@
   @media (max-width: 480px)
     @content
 
-@mixin max350
+@mixin max425
   @media (max-width: 480px)
+    @content
+
+@mixin max375
+  @media (max-width: 375px)
     @content
 
 // ORIENTATION ECRAN

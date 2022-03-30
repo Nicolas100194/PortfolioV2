@@ -1,17 +1,17 @@
 @import "../utils/animations"
 //maintenance
 .alert
+  display: none
   background-color: red
   text-align: center
-  width: 300px
+  width: 400px
   margin: 20px auto
   color: $cWhite
   font-weight: bold
   padding: 20px
 
 //site
-section
- min-height: 100%
+
 
 .container-sections
   height: 100vh
@@ -25,24 +25,32 @@ canvas
 
 section
   background-color: $cThird
-
+  padding-left: 50px
+  padding-right: 50px
 
 .header-section
+  min-height: 100%
   display: flex
   flex-direction: column
   justify-content: center
   background-color: $cThird
   padding: 0px 50px 0px 50px
   position: relative
-  h1,h3
-    text-align: center
+  .container-title
+    display: flex
+    .title-dev
+      color: $cSecond
+      font-style: italic
+
+    .title-dynamique
+      padding-left: 10px
   p
     text-align: center
     max-width: 650px
     line-height: 27px
     margin: 20px auto 0 auto
   .arrow
-    background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/down-arrow.svg")
+    background-image: url("../assets/img/down-arrow.svg")
     background-position: center
     display: block
     margin-top: 50px
@@ -51,9 +59,9 @@ section
     height: 150px
     width: 150px
     position: relative
-    animation-name: scroll_anim
-    animation-duration: 1.5s
-    animation-iteration-count: infinite
+    //animation-name: scroll_anim
+    //animation-duration: 1.5s
+    //animation-iteration-count: infinite
     a
       position: absolute
       top: 0
@@ -62,16 +70,15 @@ section
       right: 0
 
 .parcours-section
-  min-height: 80%
+  height: 1100px!important
   background-color: $cFour
   position: relative
   .container-txt, .container-timeline
     position: relative
   .container-txt
     position: absolute
-    max-width: 30vw
+    max-width: 40vw
     top: 10vh
-    margin-left: 50px
     p
       border-left: solid 3px $cSecond
       padding-left: 20px
@@ -109,7 +116,6 @@ section
 .skills-section
   padding-bottom: 50px
   .skills-languages
-    margin-left: 50px
     padding-top: 10vh
   .container-skills
     max-width: 1300px
@@ -135,7 +141,7 @@ section
         &:before
           content: ''
           display: inline-block
-          background: url("../../../../../Portfolio V2/PortfolioV2/assets/img/check.png")
+          background: url("../assets/img/check.png")
           background-size: contain
           background-repeat: no-repeat
           height: 20px
@@ -153,18 +159,19 @@ section
         .content-languages
 
   .skills-competences
-    margin: 50px
+    margin: 50px 0px
   .container-competences
-    display: flex
-    justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-gap: 70px
     margin: auto
     max-width: 1300px
     padding-bottom: 30px
     .competence
       background-color: $cFour
-      padding: 50px 30px
-      max-width: 350px
-      width: 350px
+      height: 350px
+      padding: 50px
+      margin: auto
       .txt-competence
         padding: 20px 20px
         span
@@ -180,7 +187,7 @@ section
           font-size: 16px
       .img-competence
         display: block
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/animation.png")
+        background-image: url("../assets/img/animation.png")
         background-size: contain
         background-position: center
         background-repeat: no-repeat
@@ -190,32 +197,33 @@ section
         margin-left: 20px
       &:nth-of-type(2)
         .img-competence
-          background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/responsive.png")
+          background-image: url("../assets/img/responsive.png")
       &:nth-of-type(3)
         .img-competence
-          background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/logo-wp.png")
-  .second-line
-    .competence
-      .img-competence
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/adobe.png")
-      &:nth-of-type(2)
+          background-image: url("../assets/img/logo-wp.png")
+      &:nth-of-type(4)
         .img-competence
-          background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/veille.png")
-      &:nth-of-type(3)
+          background-image: url("../assets/img/adobe.png")
+      &:nth-of-type(5)
         .img-competence
-          background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/seo.png")
+          background-image: url("../assets/img/veille.png")
+      &:nth-of-type(6)
+        .img-competence
+          background-image: url("../assets/img/git.png")
+
 .section-realisations
   background-color: $cFour
   padding-bottom: 50px
   min-height: auto
   h2
-    margin-left: 50px
     padding: 50px 0px
   .container-menu-projets
     margin: auto
     width: 700px
     display: flex
     justify-content: space-around
+    .item-active
+      background-color: $cSecond!important
     a
       color: $cWhite
       font-size: 16px
@@ -225,10 +233,9 @@ section
       width: 200px
       text-align: center
       box-sizing: border-box
-      &:first-of-type
-        color: $cWhite
       &:hover
         background-color: $cSecond
+
   .container-projets
     max-width: 1300px
     margin: 50px auto 0px auto
@@ -238,31 +245,43 @@ section
     grid-gap: 10px
     .projet
       position: relative
-      background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/media-impact.PNG")
+      background-image: url("../assets/img/media-impact.PNG")
       background-size: cover
       background-repeat: no-repeat
       background-position: center
-      &:hover
-        opacity: 0.8
-        transform: scale(0.9)
-        transition-duration: 0.3s
-        transition-timing-function: ease-out
-      &:nth-of-type(2)
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/aquaplaisir.PNG")
-      &:nth-of-type(3)
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/wordpress.PNG")
-      &:nth-of-type(4)
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/threejs.PNG")
-      &:nth-of-type(5)
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/nfa16.PNG")
-      &:nth-of-type(6)
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/portfolio.PNG")
-      a
+      .link-projet
         position: absolute
         top: 0
-        bottom: 0
         left: 0
         right: 0
+        bottom: 0
+        background-color: $cSecond
+        opacity: 0
+        transition: opacity 0.3s ease
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+          opacity: 1
+        .projet-img-hover
+          display: block
+          margin: 0 auto 15px auto
+          width: 50px
+        .project-txt-hover
+          font-size: 25px
+          text-transform: uppercase
+          font-weight: bold
+          margin: 0
+      &:nth-of-type(2)
+        background-image: url("../assets/img/aquaplaisir.PNG")
+      &:nth-of-type(3)
+        background-image: url("../assets/img/wordpress.PNG")
+      &:nth-of-type(4)
+        background-image: url("../assets/img/threejs.PNG")
+      &:nth-of-type(5)
+        background-image: url("../assets/img/nfa16.PNG")
+      &:nth-of-type(6)
+        background-image: url("../assets/img/portfolio.PNG")
     .projet-display
       display: block
     .projet-delete
@@ -271,8 +290,8 @@ section
 .section-contact
   background-color: $cThird
   min-height: auto
+  padding-bottom: 30px
   h2
-    margin-left: 50px
     padding-top: 5vh
   .container-info-contact
     display: flex
@@ -288,7 +307,7 @@ section
       padding: 20px 20px
       .img-contact
         display: block
-        background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/phone.png")
+        background-image: url("../assets/img/phone.png")
         background-size: contain
         background-repeat: no-repeat
         background-position: center
@@ -298,7 +317,7 @@ section
         flex-shrink: 0
       &:nth-of-type(2)
         .img-contact
-          background-image: url("../../../../../Portfolio V2/PortfolioV2/assets/img/email.png")
+          background-image: url("../assets/img/email.png")
 
       .txt-contact
         display: flex
@@ -338,6 +357,8 @@ section
       border-radius: 35px
       font-size: 16px
       padding: 20px
+  .message-success, .message-error
+    margin: 0
 
 
 //RESPONSIVE
@@ -350,13 +371,6 @@ section
       max-width: 50vw
 
 @include max1390
-  .skills-section
-    .container-skills
-      padding-left: 50px
-      padding-right: 50px
-    .container-competences
-      padding-left: 50px
-      padding-right: 50px
   .section-realisations
     .container-projets
       margin-right: 50px
@@ -364,15 +378,16 @@ section
       grid-template-columns: repeat(2,1fr)
 
 @include max1215
-  .skills-section
-    .container-competences
-      .competence:nth-of-type(2)
-        margin-left: 20px
-        margin-right: 20px
+  .header-section
+    .container-title
+      flex-direction: column
+      text-align: center
+    h3
+      text-align: center
 
-@include max950
-  .parcours-section
-    min-height: 70%
+
+@include max1124
+
   .parcours-section .container-txt
     max-width: 70vw
     margin: auto
@@ -398,44 +413,109 @@ section
     padding: 30px 30px
 
 @include max900
-  .container-header
-    padding: 20px 10px 20px 10px!important
-    ul
-      li
-        margin-right: 20px!important
-    .contact-me
-      padding-right: 10px!important
-      padding-left: 10px!important
   .skills-section .container-competences .competence
     padding: 20px 0px
   .skills-section
     .container-skills
       .skills
+        padding-left: 10px
+        padding-right: 10px
         .container-languages
           flex-direction: column
           align-items: center
+    .container-competences
+      grid-template-columns: repeat(2, 1fr)
 
 
 @include max800
+  section
+    padding-right: 10px
+    padding-left: 10px
   .skills-section
     .container-competences
       flex-wrap: wrap
       justify-content: start
-      .competence
-        height: 250px
-      .competence:nth-of-type(3)
-        margin-top: 20px
+
+
 
 @include max767
+  .parcours-section
+    height: 1050px!important
+    .container-timeline
+      max-width: 80%
+      right: 10%
   .section-realisations
     .container-menu-projets
       width: 80%
       a
         width: 30%
-
   .container-info-contact
     padding-left: 10px
     padding-right: 10px
   .container-form
     padding-left: 10px
     padding-right: 10px
+
+@include max700
+  .skills-section
+    .container-competences
+      grid-gap: 20px
+  .section-contact
+    .container-info-contact
+      flex-direction: column
+      .info-contact
+        justify-content: center
+        width: 70%
+        margin: auto
+        &:first-of-type
+          margin-bottom: 30px
+
+@include max640
+  .skills-section
+    .container-competences
+      grid-template-columns: repeat(1, 1fr)
+      .competence
+        width: 80%
+        height: auto
+        .img-competence
+          margin: auto
+        .txt-competence
+          text-align: center
+  .section-realisations
+    .container-menu-projets
+      width: auto
+    .container-projets
+      grid-template-columns: repeat(1, 1fr)
+
+@include max600
+  h1
+    font-size: 40px
+  .parcours-section
+    height: 1150px!important
+
+@include max550
+  .section-realisations
+    .container-menu-projets
+      a
+        padding: 15px 5px
+
+
+@include max480
+  .parcours-section
+    height: 1250px!important
+  .section-contact
+    .container-info-contact
+      flex-direction: column
+      .info-contact
+        justify-content: center
+        width: 100%
+        &:first-of-type
+          margin-bottom: 30px
+
+@include max425
+  .parcours-section
+    height: 1350px!important
+
+@include max375
+  .parcours-section
+    height: 1500px!important

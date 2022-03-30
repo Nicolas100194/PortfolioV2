@@ -11,6 +11,10 @@ function deleteCategorie(projects){
 
 Array.from(btnProjects).forEach(project => {
     project.addEventListener('click', (e) => {
+        Array.from(btnProjects).forEach(project =>{
+            project.classList.remove('item-active')
+        })
+        e.target.classList.add('item-active')
         let categorieCurrent = e.target.id
         if(categorieCurrent === 'btn-stage'){
             Array.from(projectsStage).forEach(function (project){

@@ -1,7 +1,6 @@
 let links = document.getElementsByClassName("link-projet")
 let popup = document.getElementsByClassName("modal")
 let popupCurrent =  ""
-console.log(links[0].classList)
 
 function openPopup(){
     Array.from(links).forEach(link =>{
@@ -34,10 +33,6 @@ function openPopup(){
     })
 }
 
-document.addEventListener('click', (e)=>{
-  //console.log(e.target.classList[0])
-    //console.log(e.target.length)
-})
 
 function closePopup(){
     document.addEventListener('click', (e)=>{
@@ -45,6 +40,8 @@ function closePopup(){
             popup[popupCurrent].style.display = "none"
     })
 }
+
+
 
 openPopup()
 closePopup()

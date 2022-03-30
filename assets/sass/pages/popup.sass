@@ -41,16 +41,13 @@
       width: 30%
       background-color: $cFour
       box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.08)
-      position: absolute
-      right: 0
-      top: 0
-      bottom: 0
+
       h3
         padding: 15px 0px
         background-color: $cSecond
         color: $cThird
         font-size: 20px
-      .container-technologies
+      .container-info-project
         background-color: $cFour
         h4
           color: $cWhite
@@ -69,17 +66,19 @@
               display: flex
               justify-content: center
               align-items: center
+              padding: 10px
               &:hover
+                box-shadow: 0px 0px 0px 1px $cSecond inset
                 background-color: $cThird
                 color: $cWhite
+                transition-duration: .3s
                 cursor: pointer
-                border: solid 2px $cSecond
-        .container-techno, .container-notions
+        .container-techno, .container-notions, .bloc-info-project
           position: relative
           img
             width: 30px
             height: 30px
-        .container-techno:hover,.container-notions:hover
+        .container-techno:hover,.container-notions:hover, .bloc-info-project:hover
           background-color: $cThird
           .cursor
             display: block
@@ -89,7 +88,7 @@
             width: 10px
             height: 50px
             background-color: $cSecond
-        .content-techno, .content-notions
+        .content-techno, .content-notions, .content-info-project
           padding: 30px
         .content-notions
           ul
@@ -97,6 +96,7 @@
             li
               color: #A0A0A0
               list-style-type: none
+              align-items: center
               display: flex
               margin-bottom: 20px
               font-size: 14px
@@ -104,6 +104,8 @@
               content: ''
               display: block
               width: 40px
+              height: 20px
+              flex-shrink: 0
               vertical-align: middle
               margin-right: 10px
               background-image: url("./img/check2.png")
@@ -113,15 +115,72 @@
       .btn-visit-project
         margin: 30px auto 0 auto
         width: 55%
+        max-width: 250px
         display: block
         border-radius: 35px
         color: $cSecond
         border: solid 2px $cSecond
         padding: 10px 15px
         text-align: center
+        line-height: 25px
         &:hover
+          transition-duration: .3s
           background-color: $cSecond
           color: $cWhite
 
+//RESPONSIVE
+
+@include max1390
+  .modal
+    .wrapper
+      flex-direction: column
+      .view-project
+        margin-top: 2%
+        width: 100%
+        img
+          position: relative
+          transform: none
+          left: unset
+          top: unset
+          margin-top: 30px
+      .info-project
+        width: 100%
+        margin-top: 50px
+        position: relative
+        bottom: 0
+        .container-technologies
+          display: flex
+          justify-content: center
+        .btn-visit-project
+          margin-bottom: 30px
+
+@include max1215
+  .modal
+    .wrapper
+      .info-project
+        .btn-visit-project
+
+@include max1124
+  .modal .wrapper .view-project
+    margin-top: 5%
+
+@include max800
+  .modal
+    .wrapper
+      .info-project
+        //position: relative
+        .container-technologies
+          flex-direction: column
 
 
+@include max767
+  .modal .wrapper .view-project
+    margin-top: 0%
+
+@include max550
+  .modal .wrapper .view-project h2
+    font-size: 30px
+
+@include max480
+  .modal .wrapper .info-project .container-technologies .container-techno .container-grid-languages
+    grid-template-columns: repeat(2,1fr)

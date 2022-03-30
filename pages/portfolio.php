@@ -1,12 +1,14 @@
 <main>
     <div class="container-sections">
         <section id="header-section" class="header-section">
-            <h1>Développeur web</h1>
+            <div class="container-title">
+                <h1>Développeur web</h1>
+                <h1 class="title-dynamique"></h1>
+            </div>
             <h3>delacroix nicolas</h3>
-            <span class="alert">Portfolio en maintenance des bugs peuvent subsister</span>
             <p>
                 Bonjour et bienvenue, je vous propose de découvrir mon parcours, mes réalisations et mes compétences techniques
-                 via mon portfolio. Passionné par la programmation, j'ai décidé de me spécalisé dans le développement web.
+                 via mon portfolio. Passionné par la programmation, j'ai décidé de me spécaliser dans le développement web.
             </p>
             <div class="arrow"><a href="#parcours-section"></a></div>
         </section>
@@ -16,7 +18,7 @@
                 <h2>parcours</h2>
                 <p>
                     Ayant rejoint le monde du travail à la suite de mon bac sti2d, j'ai par la suite, pris la décision de reprendre des études en rapport avec mon domaine.
-                    C'est ainsi que mon choix c'est tourné vers une formation à distance me permettant de travailler tout en reprenant mes études en même temps.
+                    C'est ainsi que mon choix s'est tourné vers une formation à distance me permettant de travailler tout en reprenant mes études en même temps.
 
                 </p>
             </div>
@@ -37,8 +39,8 @@
                     </div>
                     <div class="timeline-text">
                         <h3>Formation à distance - Titre bac +2 Technicien Développeur - Spécialisation développement web</h3>
-                        <p>Formation à distance au CNAM de Reims, cours en programmation, algoritmie, réseau, bases de données... Plusieurs
-                            langages sont étudiés : PHP, Java, HTML, CSS, Javascript ... Permet de maîtriser les connaissances de base pour être développeur informatique
+                        <p>Formation à distance au CNAM de Reims, cours en programmation, algorithme, réseau, bases de données... Plusieurs
+                            langages sont étudiés : PHP, Java, HTML, CSS, Javascript ... Permets de maîtriser les connaissances de base pour être développeur informatique
                             en se spécialisant dans un domaine choisi : WEB, Mobile ou Java.
                         </p>
                     </div>
@@ -169,11 +171,9 @@
                     <div class="img-competence"></div>
                     <div class="txt-competence">
                         <span class="title-competence">Wordpress</span>
-                        <p class="description-competence">Maîtrise de wordpress : création de thème</p>
+                        <p class="description-competence">Maîtrise de wordpress : création de thème, gestion des templates, création de widget elementor</p>
                     </div>
                 </div>
-            </div>
-            <div class="container-competences second-line">
                 <div class="competence">
                     <div class="img-competence"></div>
                     <div class="txt-competence">
@@ -185,14 +185,15 @@
                     <div class="img-competence"></div>
                     <div class="txt-competence">
                         <span class="title-competence">veille technologique</span>
-                        <p class="description-competence">Continuer à développer mes compétences, découvertes d'API, de libraires etc...</p>
+                        <p class="description-competence">Continue à m'informer de façon systématique sur les techniques les plus récentes en développement web</p>
                     </div>
                 </div>
                 <div class="competence">
                     <div class="img-competence"></div>
                     <div class="txt-competence">
-                        <span class="title-competence">seo</span>
-                        <p class="description-competence">Maîtrise des bonnes pratiques de codage permettant l'optimisation du référencement des sites web</p>
+                        <span class="title-competence">Versionning</span>
+                        <p class="description-competence">GitLab, GitKraken... grâce à mon expérience en entreprise j'ai pu acquérir les bonnes pratiques du travail en équipe en
+                        maitrisant les outils de versionning GIT</p>
                     </div>
                 </div>
             </div>
@@ -205,12 +206,54 @@
                 <a class="item-menu-projet" id="btn-cnam"href="#">cursus CNAM</a>
             </div>
             <div class="container-projets">
-                <div class="projet stage "><a class="link-projet stage media-impact" href="#popup"></a></div>
-                <div class="projet personnel "><a class="link-projet personnel aqua-plaisir" href="#popup"></a></div>
-                <div class="projet personnel "><a class="link-projet personnel wordpress-perso" href="#popup"></a></div>
-                <div class="projet personnel "><a class="link-projet personnel system-solar" href="#popup"></a></div>
-                <div class="projet cnam "><a class="link-projet cnam theme-cnam" href="#popup"></a></div>
-                <div class="projet personnel "><a class="link-projet personnel portfolio" href="#popup"></a></div>
+                <div class="projet stage ">
+                    <a class="link-projet stage media-impact" href="#popup">
+                        <div class="content-link-hover">
+                            <img class="projet-img-hover" src="assets/img/consulter.png"/>
+                            <p class="project-txt-hover">Détails</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet personnel ">
+                    <a class="link-projet personnel aqua-plaisir" href="#popup">
+                        <div class="content-link-hover">
+                            <img class="projet-img-hover" src="assets/img/consulter.png"/>
+                            <p class="project-txt-hover">Détails</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet personnel ">
+                    <a class="link-projet personnel wordpress-perso" href="#popup">
+                        <div class="content-link-hover">
+                            <img class="projet-img-hover" src="assets/img/consulter.png"/>
+                            <p class="project-txt-hover">Détails</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet personnel ">
+                    <a class="link-projet personnel system-solar" href="#popup">
+                        <div class="content-link-hover">
+                            <img class="projet-img-hover" src="assets/img/consulter.png"/>
+                            <p class="project-txt-hover">Détails</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet cnam ">
+                    <a class="link-projet cnam theme-cnam" href="#popup">
+                        <div class="content-link-hover">
+                            <img class="projet-img-hover" src="assets/img/consulter.png"/>
+                            <p class="project-txt-hover">Détails</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet personnel ">
+                    <a class="link-projet personnel portfolio" href="#popup">
+                        <div class="content-link-hover">
+                            <img class="projet-img-hover" src="assets/img/consulter.png"/>
+                            <p class="project-txt-hover">Détails</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <section id="section-contact" class="section-contact">
@@ -258,13 +301,15 @@
                 </form>
             </div>
             <?php
-            require'./app/Autoloader.php';
-            App\Autoloader::register();
-            $db = new App\DataBase('portfolio');
-            $datas = $db->query('SELECT * FROM projets');
+            //require'./app/Autoloader.php';
+            //App\Autoloader::register();
+            //$db = new App\DataBase('portfolio');
+            //$datas = $db->query('SELECT * FROM projets');
             //echo '<img src="data:image/jpg;base64,' .base64_encode($datas[0]['image']) . '"/>';
             ?>
-
+            <?php
+            //    echo password_verify('Nicodu100194*', '$2y$10$oE8nVNwgxehQR.Nds4E/2.vmzu.I2H1gy.VKpsoP3clX2VNYGb9L2');
+            ?>
         </section>
     </div>
 </main>
