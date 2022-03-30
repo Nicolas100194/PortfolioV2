@@ -15,7 +15,7 @@
         <?php //if ($admin->estConnecte()) : ?>
             <a href="../pages/logout.php">Se déconnecter</a>
         <!--// endif;?>-->
-        <?php foreach($db->query('SELECT * FROM projets', 'App\Projet') as $project) : ?>
+        <?php foreach($db->queryObj('SELECT * FROM projets', 'App\Projet') as $project) : ?>
             <?= $project->getTitre()?>
             <?= $project->getTechnologies()?>
         <?php endforeach; ?>
