@@ -42,4 +42,9 @@ class DataBase{
         return $result;
     }
 
+    public function Exec($sqlExec, $array){
+        $req = $this->getPDO()->prepare($sqlExec);
+        $req->execute($array);
+    }
+
 }

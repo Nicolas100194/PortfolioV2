@@ -1,6 +1,18 @@
+body
+  overflow-y: auto
 .body-admin
   background-color: $cThird
   color: $cWhite
   .section-admin
     height: 100%
+    .admin-container-projects
+      display: grid
+      grid-template-columns: repeat(3,1fr)
+      grid-gap: 50px
+      .admin-card-project
+        background-color: $cFour
+        .admin-projet-img
+          display: block
+          width: 200px
+          height: auto
 

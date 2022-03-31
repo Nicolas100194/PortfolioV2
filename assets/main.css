@@ -989,12 +989,29 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+body {
+  overflow-y: auto;
+}
+
 .body-admin {
   background-color: #1F2235;
   color: #ffffff;
 }
 .body-admin .section-admin {
   height: 100%;
+}
+.body-admin .section-admin .admin-container-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+.body-admin .section-admin .admin-container-projects .admin-card-project {
+  background-color: #23263A;
+}
+.body-admin .section-admin .admin-container-projects .admin-card-project .admin-projet-img {
+  display: block;
+  width: 200px;
+  height: auto;
 }
 
 .body-login {
