@@ -30,10 +30,21 @@ class DataBase{
         return $this->pdo;
     }
 
+    public function queryObj($sqlQuery, $className){
+        $req = $this->getPDO()->query($sqlQuery);
+        $result = $req->fetchAll(PDO::FETCH_CLASS, $className);
+        return $result;
+    }
+
     public function query($sqlQuery){
         $req = $this->getPDO()->query($sqlQuery);
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
         return $result;
+    }
+
+    public function Exec($sqlExec, $array){
+        $req = $this->getPDO()->prepare($sqlExec);
+        $req->execute($array);
     }
 
 }

@@ -15,7 +15,7 @@
         <?php if(!empty($_SESSION['nonConnecte'])) : ?>
             <h4 class="alert-login">Vous devez vous connecter pour accéder à cette page</h4>
         <?php endif; unset($_SESSION['nonConnecte']) ?>
-        <?php if ($erreur) : ?>
+        <?php if($erreur) : ?>
             <h4 class="alert-login"><?= $erreur?></h4>
         <?php endif; ?>
         <form name="" method="POST">
