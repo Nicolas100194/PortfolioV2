@@ -13,7 +13,7 @@
     <h1>Se connecter</h1>
     <div class="container-form">
         <?php if(!empty($_SESSION['nonConnecte'])) : ?>
-            <h4 class="alert-login">Vous devez vous connecter pour accéder à cette page</h4>
+            <h4 class="alert-message">Vous devez vous connecter pour accéder à cette page</h4>
         <?php endif; unset($_SESSION['nonConnecte']) ?>
         <?php if($erreur) : ?>
             <h4 class="alert-login"><?= $erreur?></h4>

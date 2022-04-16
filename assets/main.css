@@ -330,10 +330,11 @@ section {
 }
 .section-realisations .container-projets .projet {
   position: relative;
-  background-image: url("../assets/img/media-impact.PNG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+.section-realisations .container-projets .projet .img-projet {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .section-realisations .container-projets .projet .link-projet {
   position: absolute;
@@ -361,21 +362,6 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
-}
-.section-realisations .container-projets .projet:nth-of-type(2) {
-  background-image: url("../assets/img/aquaplaisir.PNG");
-}
-.section-realisations .container-projets .projet:nth-of-type(3) {
-  background-image: url("../assets/img/wordpress.PNG");
-}
-.section-realisations .container-projets .projet:nth-of-type(4) {
-  background-image: url("../assets/img/threejs.PNG");
-}
-.section-realisations .container-projets .projet:nth-of-type(5) {
-  background-image: url("../assets/img/nfa16.PNG");
-}
-.section-realisations .container-projets .projet:nth-of-type(6) {
-  background-image: url("../assets/img/portfolio.PNG");
 }
 .section-realisations .container-projets .projet-display {
   display: block;
@@ -997,8 +983,90 @@ body {
   background-color: #1F2235;
   color: #ffffff;
 }
+.body-admin .header-admin {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 70px;
+  background-color: #23263A;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.body-admin .header-admin h1 {
+  font-size: 40px;
+}
+.body-admin .header-admin a {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FF3535;
+  border: solid 1px #FF3535;
+  line-height: 40px;
+}
+.body-admin .header-admin a:hover {
+  background-color: #FF3535;
+  color: #ffffff;
+}
 .body-admin .section-admin {
   height: 100%;
+}
+.body-admin .section-admin h3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.body-admin .section-admin .container-form {
+  width: 50%;
+  max-width: 800px;
+  padding: 10px;
+  margin: auto;
+}
+.body-admin .section-admin .container-form .alert-message {
+  width: 70%;
+  margin: 0px auto 30px auto;
+  background-color: #FF3535;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+}
+.body-admin .section-admin .container-form form input {
+  display: block;
+  width: 100%;
+  background-color: #23263A;
+  border: none;
+  color: #ffffff;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.body-admin .section-admin .container-form form .btn-submit {
+  background-color: #FF3535;
+}
+.body-admin .section-admin .container-form form .btn-submit:hover {
+  cursor: pointer;
+}
+.body-admin .section-admin .container-form form .container-input-file {
+  position: relative;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.body-admin .section-admin .container-form form .container-input-file input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.body-admin .section-admin .container-form form .container-input-file input[type=file]:hover {
+  cursor: pointer;
+}
+.body-admin .section-admin .container-form form .container-input-file .btn-upload-file {
+  background-color: #FF5C5C;
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
 }
 .body-admin .section-admin .admin-container-projects {
   display: grid;
@@ -1006,12 +1074,28 @@ body {
   grid-gap: 50px;
 }
 .body-admin .section-admin .admin-container-projects .admin-card-project {
+  padding: 30px;
   background-color: #23263A;
+  box-shadow: 5px 5px 15px 5px #0606061f;
+}
+.body-admin .section-admin .admin-container-projects .admin-card-project h3 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.body-admin .section-admin .admin-container-projects .admin-card-project h4 {
+  text-transform: uppercase;
+}
+.body-admin .section-admin .admin-container-projects .admin-card-project p {
+  color: #A0A0A0;
 }
 .body-admin .section-admin .admin-container-projects .admin-card-project .admin-projet-img {
   display: block;
   width: 200px;
-  height: auto;
+  height: 200px;
+  object-fit: contain;
+  margin: auto;
+  padding: 10px;
 }
 
 .body-login {
@@ -1042,7 +1126,7 @@ body {
   padding: 10px;
   margin: auto;
 }
-.body-login .section-login .container-form .alert-login {
+.body-login .section-login .container-form .alert-message {
   width: 70%;
   margin: 0px auto 30px auto;
   background-color: #FF3535;

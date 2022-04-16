@@ -3,16 +3,99 @@ body
 .body-admin
   background-color: $cThird
   color: $cWhite
+  .header-admin
+    display: flex
+    justify-content: space-between
+    padding-left: 50px
+    padding-right: 50px
+    height: 70px
+    background-color: $cFour
+    align-items: center
+    margin-bottom: 50px
+    h1
+      font-size: 40px
+    a
+      height: 40px
+      padding-left: 20px
+      padding-right: 20px
+      color: $cPrinc
+      border: solid 1px $cPrinc
+      line-height: 40px
+      &:hover
+        background-color: $cPrinc
+        color: $cWhite
   .section-admin
     height: 100%
+    h3
+      margin-top: 50px
+      margin-bottom: 50px
+    .container-form
+      width: 50%
+      max-width: 800px
+      padding: 10px
+      margin: auto
+      .alert-message
+        width: 70%
+        margin: 0px auto 30px auto
+        background-color: $cPrinc
+        padding: 15px
+        text-align: center
+        color: $cWhite
+        font-weight: normal
+      form
+        input
+          display: block
+          width: 100%
+          background-color: $cFour
+          border: none
+          color: $cWhite
+          height: 50px
+          margin-bottom: 20px
+          padding-left: 10px
+        .btn-submit
+          background-color: $cPrinc
+          &:hover
+            cursor: pointer
+        .container-input-file
+          position: relative
+          cursor: pointer
+          width: 50%
+          margin-bottom: 20px
+          input[type=file]
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 0
+            &:hover
+              cursor: pointer
+          .btn-upload-file
+            background-color: $cSecond
+            border: none
+            width: 100%
+            height: 50px
+            color: $cWhite
     .admin-container-projects
       display: grid
       grid-template-columns: repeat(3,1fr)
       grid-gap: 50px
       .admin-card-project
+        padding: 30px
         background-color: $cFour
+        box-shadow: 5px 5px 15px 5px #0606061f
+        h3
+          text-align: center
+          margin-bottom: 0
+          margin-top: 0
+        h4
+          text-transform: uppercase
+        p
+          color: #A0A0A0
         .admin-projet-img
           display: block
           width: 200px
-          height: auto
+          height: 200px
+          object-fit: contain
+          margin: auto
+          padding: 10px
+
 

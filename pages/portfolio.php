@@ -199,6 +199,8 @@
             </div>
         </section>
         <section id="section-realisations" class="section-realisations">
+
+            <?php $projectObj = new \App\Projet();?>
             <h2>Réalisations</h2>
             <div class="container-menu-projets">
                 <a class="item-menu-projet" id="btn-stage" href="#">Stage</a>
@@ -206,7 +208,9 @@
                 <a class="item-menu-projet" id="btn-cnam"href="#">cursus CNAM</a>
             </div>
             <div class="container-projets">
+
                 <div class="projet stage ">
+                    <img class="img-projet" src="./assets/img/media-impact.PNG">
                     <a class="link-projet stage media-impact" href="#popup">
                         <div class="content-link-hover">
                             <img class="projet-img-hover" src="assets/img/consulter.png"/>
@@ -215,6 +219,7 @@
                     </a>
                 </div>
                 <div class="projet personnel ">
+                    <img class="img-projet" src="./assets/img/aquaplaisir.PNG">
                     <a class="link-projet personnel aqua-plaisir" href="#popup">
                         <div class="content-link-hover">
                             <img class="projet-img-hover" src="assets/img/consulter.png"/>
@@ -223,6 +228,7 @@
                     </a>
                 </div>
                 <div class="projet personnel ">
+                    <img class="img-projet" src="./assets/img/wordpress.PNG">
                     <a class="link-projet personnel wordpress-perso" href="#popup">
                         <div class="content-link-hover">
                             <img class="projet-img-hover" src="assets/img/consulter.png"/>
@@ -231,6 +237,7 @@
                     </a>
                 </div>
                 <div class="projet personnel ">
+                    <img class="img-projet" src="./assets/img/threejs.PNG">
                     <a class="link-projet personnel system-solar" href="#popup">
                         <div class="content-link-hover">
                             <img class="projet-img-hover" src="assets/img/consulter.png"/>
@@ -239,6 +246,7 @@
                     </a>
                 </div>
                 <div class="projet cnam ">
+                    <img class="img-projet" src="./assets/img/nfa16.PNG">
                     <a class="link-projet cnam theme-cnam" href="#popup">
                         <div class="content-link-hover">
                             <img class="projet-img-hover" src="assets/img/consulter.png"/>
@@ -247,6 +255,7 @@
                     </a>
                 </div>
                 <div class="projet personnel ">
+                    <img class="img-projet" src="./assets/img/portfolio.PNG">
                     <a class="link-projet personnel portfolio" href="#popup">
                         <div class="content-link-hover">
                             <img class="projet-img-hover" src="assets/img/consulter.png"/>
@@ -293,23 +302,8 @@
                         unset($_SESSION['success']);
                         unset($_SESSION['errors']);
                     ?>
-                    <!--<input type="text" name="nom" placeholder="Votre nom">
-                    <input type="text" name="prenom" placeholder="Votre prénom">
-                    <input type="email" name="email" placeholder="Votre email">
-                    <textarea type="text" name="message" placeholder="Saisir votre message"></textarea>
-                    <input class="btn-submit" type="submit" value="Envoyer">-->
                 </form>
             </div>
-            <?php
-            //require'./app/Autoloader.php';
-            //App\Autoloader::register();
-            //$db = new App\DataBase('portfolio');
-            //$datas = $db->query('SELECT * FROM projets');
-            //echo '<img src="data:image/jpg;base64,' .base64_encode($datas[0]['image']) . '"/>';
-            ?>
-            <?php
-            //    echo password_verify('Nicodu100194*', '$2y$10$oE8nVNwgxehQR.Nds4E/2.vmzu.I2H1gy.VKpsoP3clX2VNYGb9L2');
-            ?>
         </section>
     </div>
 </main>

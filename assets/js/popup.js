@@ -1,47 +1,48 @@
-let links = document.getElementsByClassName("link-projet")
+var links = document.getElementsByClassName("link-projet")
 let popup = document.getElementsByClassName("modal")
 let popupCurrent =  ""
 
 function openPopup(){
     Array.from(links).forEach(link =>{
-        link.addEventListener('click', ()=>{
-            if(link.classList[2] == 'media-impact'){
+        link.addEventListener('click', (e)=>{
                 popup[0].style.display = "block"
-                popupCurrent = 0
-            }
-            if(link.classList[2] == 'aqua-plaisir'){
-                popup[1].style.display = "block"
-                popupCurrent = 1
-            }
-            if(link.classList[2] == 'wordpress-perso'){
-                popup[2].style.display = "block"
-                popupCurrent = 2
-            }
-            if(link.classList[2] == 'system-solar'){
-                popup[3].style.display = "block"
-                popupCurrent = 3
-            }
-            if(link.classList[2] == 'theme-cnam'){
-                popup[4].style.display = "block"
-                popupCurrent = 4
-            }
-            if(link.classList[2] == 'portfolio'){
-                popup[5].style.display = "block"
-                popupCurrent = 5
-            }
+                if(e.target.id !== "")
+                    popupCurrent = e.target.id
+                    console.log(popupCurrent)
         })
     })
 }
 
-
 function closePopup(){
     document.addEventListener('click', (e)=>{
         if(e.target.classList[0] === "modal" && e.target.length != 2)
-            popup[popupCurrent].style.display = "none"
+            popup[0].style.display = "none"
     })
+}
+
+function loadPopup(){
+    let httpRequest = new XMLHttpRequest()
+    httpRequest.onreadystatechange = function (){
+        console.log(this)
+        if(httpRequest.readyState === 4){
+
+            let donnees = JSON.parse(httpRequest.response)
+            donnees = Object.entries(donnees)
+
+            donnees.forEach((item)=>{
+                console.log(item.forEach((item2)=>{
+                    console.log(item2[0])
+                }))
+            })
+        }
+    }
+    httpRequest.open('GET', '../PortfolioV2/app/Projet.php', true)
+    httpRequest.setRequestHeader('X-Requested-With', '')
+    httpRequest.send()
 }
 
 
 
+loadPopup()
 openPopup()
 closePopup()

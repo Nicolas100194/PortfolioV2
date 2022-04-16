@@ -245,10 +245,10 @@ section
     grid-gap: 10px
     .projet
       position: relative
-      background-image: url("../assets/img/media-impact.PNG")
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: center
+      .img-projet
+        width: 100%
+        height: 100%
+        object-fit: cover
       .link-projet
         position: absolute
         top: 0
@@ -263,6 +263,7 @@ section
         align-items: center
         &:hover
           opacity: 1
+
         .projet-img-hover
           display: block
           margin: 0 auto 15px auto
@@ -272,16 +273,6 @@ section
           text-transform: uppercase
           font-weight: bold
           margin: 0
-      &:nth-of-type(2)
-        background-image: url("../assets/img/aquaplaisir.PNG")
-      &:nth-of-type(3)
-        background-image: url("../assets/img/wordpress.PNG")
-      &:nth-of-type(4)
-        background-image: url("../assets/img/threejs.PNG")
-      &:nth-of-type(5)
-        background-image: url("../assets/img/nfa16.PNG")
-      &:nth-of-type(6)
-        background-image: url("../assets/img/portfolio.PNG")
     .projet-display
       display: block
     .projet-delete
